@@ -1,0 +1,47 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Top_area Top_area Top_area Top_area" "Remain_area Remain_area Remain_area Remain_area" "Remain_area Remain_area Remain_area Remain_area";
+}
+
+.Top_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 0.7fr;
+  gap: 1px 1px;
+  grid-template-areas: "Logo_png marquee Right_side" "Wasted_area Wasted_area Wasted_area";
+  grid-area: Top_area;
+}
+
+.Right_side {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". about about" ". about about";
+  grid-area: Right_side;
+}
+
+.about { grid-area: about; }
+
+.Logo_png { grid-area: Logo_png; }
+
+.marquee { grid-area: marquee; }
+
+.Wasted_area { grid-area: Wasted_area; }
+
+.Remain_area {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". text_area ." ". text_area .";
+  grid-area: Remain_area;
+
+}
+
+.text_area { grid-area: text_area;
+  
+background-color: white}

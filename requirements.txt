@@ -1,0 +1,9 @@
+django
+sounddevice
+SoundFile
+numpy
+SpeechRecognition
+nltk
+gTTS
+pydub
+playsound
